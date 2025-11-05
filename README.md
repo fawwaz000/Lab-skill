@@ -72,3 +72,16 @@ void pyramid() {
     cout << "\nSurface Area of Pyramid: " << area << endl;
     cout << "Volume of Pyramid: " << volume << endl;
 }
+
+void cylinder() {
+    double r, h;
+    cout << "Enter radius and height of cylinder: ";
+    cin >> r >> h;
+
+    double area = 2 * M_PI * r * (r + h);
+    double volume = M_PI * pow(r, 2) * h;
+
+    cout << fixed << setprecision(2);
+    cout << "\nSurface Area of Cylinder: " << area << endl;
+    cout << "Volume of Cylinder: " << volume << endl;
+}
